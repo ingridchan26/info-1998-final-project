@@ -1,0 +1,26 @@
+# dependencies (any folder)
+node_modules/
+.pnp
+.pnp.js
+
+# build output
+.next/
+out/
+build/
+dist/
+coverage/
+
+# env files / secrets (never push API keys or Firebase service accounts)
+.env
+.env*.local
+serviceAccountKey*.json
+
+# misc
+.DS_Store
+*.pem
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vercel
