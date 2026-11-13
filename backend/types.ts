@@ -10,3 +10,9 @@ export type Group = {
   members: Member[]
   assigned: boolean
 }
+
+// One giver -> receiver pair shown on the Results page
+export type Assignment = {
+  giver: string
+  receiver: string
+}

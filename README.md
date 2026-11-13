@@ -2,24 +2,26 @@
 
 ## Structure
 ```
-frontend/   Next.js + React + TypeScript (the 3 pages)
-backend/    Express + TypeScript API (port 8080)
+frontend/ Vite + React + TypeScript (the 3 pages) — built on the course frontend-starter
+backend/  Express + TypeScript API in server.ts (port 8080) — same layout as the lec6/lec7 demos
 ```
 
 ## Running locally
 Run each in its own terminal:
 
 ```bash
-cd backend && pnpm install && pnpm dev     # http://localhost:8080
-cd frontend && pnpm install && pnpm dev    # http://localhost:3000
+cd backend && pnpm install && pnpm dev    # http://localhost:8080
+cd frontend && pnpm install && pnpm dev    # http://localhost:5173
 ```
 
 ## Pages
-| Page | Route | Purpose |
+No router: `src/App.tsx` switches pages with `useState` (Unit 2).
+
+| Page | File | Purpose |
 |---|---|---|
-| Create | `/` | Enter number of people / names |
-| Group | `/group/[id]` | Rename/remove members, press Go |
-| Results | `/results/[id]` | Reveal each person's assignment |
+| Create | `src/pages/CreatePage.tsx` | Enter number of people / names |
+| Group | `src/pages/GroupPage.tsx` | Rename/remove members, press Go |
+| Results | `src/pages/ResultsPage.tsx` | Reveal each person's assignment |
 
 ## API
 | Method | Route |
