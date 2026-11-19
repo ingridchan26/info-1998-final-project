@@ -1,5 +1,7 @@
 import express, { Express } from "express"
 import cors from "cors"
+import { db } from "./firebase"
+
 
 const app: Express = express()
 const port = 8080
