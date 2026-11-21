@@ -3,13 +3,13 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/
 import withFirebaseAuth from "react-with-firebase-auth"
 
 const firebaseConfig = {
-  apiKey: "PASTE_FROM_FIREBASE_CONSOLE",
-  authDomain: "PASTE_FROM_FIREBASE_CONSOLE",
-  projectId: "PASTE_FROM_FIREBASE_CONSOLE",
-  storageBucket: "PASTE_FROM_FIREBASE_CONSOLE",
-  messagingSenderId: "PASTE_FROM_FIREBASE_CONSOLE",
-  appId: "PASTE_FROM_FIREBASE_CONSOLE",
-}
+  apiKey: "AIzaSyAw43w_94Snc-PQP-iuQjSqIZZEmCyBREQ",
+  authDomain: "secret-santa-2519b.firebaseapp.com",
+  projectId: "secret-santa-2519b",
+  storageBucket: "secret-santa-2519b.firebasestorage.app",
+  messagingSenderId: "577065959669",
+  appId: "1:577065959669:web:e8b82e1e8c5b9e46f885bc"
+};
 
 const app = initializeApp(firebaseConfig)
 const auth = getAuth(app)
