@@ -23,7 +23,7 @@ const GroupPage = ({ goTo, uid }: Props) => {
   const [error, setError] = useState("")
 
   // Most routes reply with the updated group, so handle replies in one place
-  const showReply = (data: any) => {
+  const showReply = (data: Group & { error?: string }) => {
     // If the backend sent an error, show it
     if (data.error) {
       setError(data.error)

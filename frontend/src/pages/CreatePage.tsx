@@ -46,7 +46,7 @@ const CreatePage = ({ goTo, uid }: Props) => {
       <p>Enter everyone's names, separated by commas. This replaces any group you made before.</p>
       {/* The names box */}
       <input
-        placeholder="Alex, Sam, Lee"
+        placeholder="a,b,c"
         value={names}
         onChange={(e) => setNames(e.target.value)}
       />
