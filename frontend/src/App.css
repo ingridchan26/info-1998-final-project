@@ -1,42 +1,81 @@
 #root {
-  max-width: 1280px;
+  max-width: 560px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 2rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.page h1 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.page p {
+  margin: 0;
+}
+
+input {
+  padding: 0.6em 0.8em;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #888;
+  min-width: 0;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.row input {
+  flex: 1;
 }
 
 .card {
-  padding: 2em;
+  border: 1px solid #888;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
 }
 
-.read-the-docs {
-  color: #888;
+.card h3 {
+  margin: 0;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+button.link {
+  background: none;
+  text-decoration: underline;
+  align-self: flex-start;
+  padding: 0.3em 0;
+}
+
+.error {
+  color: #e5484d;
 }
