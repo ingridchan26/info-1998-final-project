@@ -46,7 +46,7 @@ const CreatePage = ({ goTo, uid }: Props) => {
       <p>Enter everyone's names, separated by commas. This replaces any group you made before.</p>
       {/* The names box */}
       <input
-        placeholder="Alex, Sam, Lee"
+        placeholder="a,b,c"
         value={names}
         onChange={(e) => setNames(e.target.value)}
       />
@@ -54,10 +54,6 @@ const CreatePage = ({ goTo, uid }: Props) => {
       <button onClick={createGroup}>Create group</button>
       {/* Only show an error if there is one (conditional rendering, Unit 2) */}
       {error && <p className="error">{error}</p>}
-      {/* Come back to a group made earlier */}
-      <button className="link" onClick={() => goTo("group")}>
-        Open my existing group
-      </button>
     </div>
   )
 }
